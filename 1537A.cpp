@@ -1,4 +1,4 @@
-//    1971B     ---->>>>     Different String     <<<<----
+//     1537A      ---->>>>     Arithmetic  Array      <<<<----
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -6,25 +6,32 @@ typedef long long ll;
 
 void work()
 {
-    string s;
-    cin >> s;
-    int n=s.length()-1;
-
-    string ans;
-
-    for(int i=n; i>=0; i--)
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    float sum=0;
+    for(int i=0; i<n; i++)
     {
-        ans+=s[i];
+        cin >> v[i];
+        sum+=float(v[i]);
     }
-
-    if(ans.compare(s) == 0)
+   
+   int len=v.size();
+   int chiz = len+1-sum;
+   if(sum/len == 1.00)
+   {
+    cout << "0" << endl;
+   }else
+   {
+    if(chiz > 0 || chiz==0)
     {
-        cout << "NO" << endl;
-    }else
+        cout << "1" << endl;
+    }else if(chiz <0)
     {
-        cout << "YES" << endl;
-        cout << ans << endl;
+        cout << abs(chiz)+1 << endl;
     }
+   }
+
 }
 
 int main()
