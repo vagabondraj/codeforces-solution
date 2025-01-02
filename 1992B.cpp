@@ -1,4 +1,4 @@
-//     1992B     ---->>>>     Angary  Mock      <<<<----
+//     1992B     ---->>>>     Angry  Monk      <<<<----
 
 #include<bits/stdc++.h>
 using namespace std;
