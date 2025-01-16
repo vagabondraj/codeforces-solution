@@ -23,7 +23,11 @@ void work()
             ans+=s[i];
         }
     }
-    cout << ans << endl;
+   for(int i=1; i<ans.length(); i++)
+   {
+       cout << ans[i];
+   }
+   cout << endl;  
 }
 
 int main()
